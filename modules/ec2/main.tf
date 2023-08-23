@@ -4,6 +4,7 @@ resource "aws_instance" "example" {
   #checkov:skip=CKV_AWS_126: "This is a test instance, detailed monitoring not required"
   ami           = "ami-0786f5bc3943ad52d"
   instance_type = "t2.micro"
+  novinka = true
   tags = {
     Name = var.name
   }
